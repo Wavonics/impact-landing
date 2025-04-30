@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMPACT Dashboard v2</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: orange;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #222;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .feature-box {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .screenshot img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 6px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .demo-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    a {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IMPACT Dashboard v2</h1>
+    <p>Modern IT Governance for Cities & Public Sector</p>
+  </header>
+  <main>
+    <section>
+      <h2>What is IMPACT?</h2>
+      <p>
+        The IMPACT Dashboard is a powerful tool for managing contracts, procurement, funding, strategic IT projects, and assets in a unified, role-based interface — built with public sector needs in mind.
+      </p>
+    </section>
+    <section>
+      <h2>Core Features</h2>
+      <div class="features">
+        <div class="feature-box"><strong>🧾 Contract Tracking</strong><br/>Track vendor agreements, terms, and expirations</div>
+        <div class="feature-box"><strong>💰 Budget & Funding</strong><br/>Align contracts with budgets and funding sources</div>
+        <div class="feature-box"><strong>📊 Project Planning</strong><br/>Track PIPs, enhancements, and project types</div>
+        <div class="feature-box"><strong>🧠 AI Assistant</strong><br/>Search contracts and insights with natural language</div>
+        <div class="feature-box"><strong>🧱 Asset Management</strong><br/>Track hardware/software, ownership & leases</div>
+        <div class="feature-box"><strong>🔔 Alerts & Audit</strong><br/>View expiration alerts and full change logs</div>
+      </div>
+    </section>
+    <section class="screenshot">
+      <h2>Dashboard Preview</h2>
+      <img src="screenshots/dashboard.png" alt="Dashboard Screenshot Placeholder" />
+    </section>
+    <section>
+      <h2>Try the Live Demo</h2>
+      <a href="https://impact-dashboard-demo.example.com" class="demo-button" target="_blank">Launch Demo</a>
+    </section>
+    <section>
+      <h2>Get In Touch</h2>
+      <p>
+        Visit our <a href="https://github.com/your-org/impact-dashboard" target="_blank">GitHub Repository</a>
+        or contact us at <a href="mailto:impact@yourcity.gov">impact@yourcity.gov</a>.
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 IMPACT Dashboard. Built for public service.
+  </footer>
+</body>
+</html>
