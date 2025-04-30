@@ -1,4 +1,4 @@
-name: Deploy Landing Page to GitHub Pages
+name: Deploy Static Site to GitHub Pages
 
 on:
   push:
@@ -10,17 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node (required by gh-pages)
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: .
+          branch: gh-pages
+          folder: .
